@@ -1,0 +1,30 @@
+.language {
+  min-width: 65px;
+  margin-right: 10px;
+}
+
+.label.language {
+  padding-top: 0.6em;
+  color: #fbfdfa;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 1.2em;
+}
+
+.lang-python {
+  background-color: #42ebf4;
+}
+
+.lang-cpp {
+  background-color: #92cf5c;
+}
+
+.lang-java {
+  background-color: #dd0d1e;
+}
+
+/*.diff-super {*/
+  /*background-color: #8d16e2;*/
+/*}*/

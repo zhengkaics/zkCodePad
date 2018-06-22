@@ -1,0 +1,35 @@
+<div>
+  <form #formRef="ngForm">
+    <div class="form-group">
+      <label for="problemName">Name</label>
+      <input type="text" class="form-control" id="problemName"
+             name="problemName" required placeholder="Enter Name Of Your File" [(ngModel)]="newProblem.name">
+    </div>
+    <div class="form-group">
+      <label for="problemDesc">Description</label>
+      <textarea type="text" row="3" class="form-control" id="problemDesc"
+                name="problemDesc" required placeholder="Enter Description Of Your File" [(ngModel)]="newProblem.desc"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="language">Language</label>
+      <select type="text" class="form-control" id="language"
+              name="language" [(ngModel)]="newProblem.language">
+        <option *ngFor="let language of languages" [value]="language">
+          {{language}}
+        </option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="problemPassword">Password</label>
+      <input type="password" class="form-control" id="problemPassword"
+             name="problemPassword" required placeholder="Enter Password" [(ngModel)]="newProblem.password">
+      <!--<textarea type="password" row="3" class="form-control" id="problemPassword"-->
+                <!--name="problemPassword" required placeholder="Enter Password" [(ngModel)]="newProblem.password"></textarea>-->
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <button type="submit" class="btn btn-primary pull-left" (click)="addProblem()">NEW PAD</button>
+      </div>
+    </div>
+  </form>
+</div>

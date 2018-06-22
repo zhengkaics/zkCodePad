@@ -1,0 +1,12 @@
+<div class="container">
+  <app-new-problem></app-new-problem>
+  <div class="list-group">
+    <br>
+    <a class="list-group-item" *ngFor="let problem of problems" [routerLink]="['/problems', problem.id]"><!--ngFor遍历数组每个成员 -->
+      <!--<div class="btn {{'pull-left label difficulty language-' + problem.language.toLowerCase()}}">{{problem.language}}</div>-->
+      <span class="{{'pull-left label language lang-' + problem.language.toLocaleLowerCase()}}">{{problem.language}}</span>
+      <strong class="title">{{problem.id}}.{{problem.name}}</strong>
+
+    </a>
+  </div>
+</div>
